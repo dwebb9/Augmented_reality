@@ -11,7 +11,7 @@ The largest challenge we had was openCV struggling to find the markers. It turne
 
 Another challenge, which we never overcame, was using proper shading on our objects. To do this, OpenGL has to be used, and we just didn't have enough experience with it to figure it out in time. Rather, we just filled each polygon of our object with a solid color shading. This gives good outlines, but lacks a depth that'd come from a more sophisticated approach.
 
-Finally, it was also challenging to determine the 3D pose of the marker. Initially, we discoverd that we were actualy finding the homography of the markers which, although does work for plotting 2D imagaes on to the markers, does not work for 3D images. Eventually we discovered that instead of using the function cv2.findHomography() we needed to use
+Finally, it was also challenging to determine the 3D pose of the marker. Initially, we discoverd that we were actualy finding the homography of the markers which, although does work for plotting 2D imagaes on to the markers, does not work for 3D images. Eventually we discovered that instead of using the function cv2.findHomography() we needed to use cv2.estimatePoseSingleMarkers(), which allowed us to plot 3D points. 
 
 ## Solutions
 We chose aruco markers to identify the pose of our cards since there is built in libraries in openCV for handling them. No need to re-invent the wheel!
