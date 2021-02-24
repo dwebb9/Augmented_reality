@@ -21,6 +21,6 @@ OpenCV was used to detect the markers in our images, and then to estimate the po
 We overcame the homography issue by using the function cv2.estimatePoseSingleMarkers() instead of cv2.findHomography(). 
 
 ## Results
-Here's a video of all the cards: 
+Here's a video of all the cards: https://youtu.be/HX7PTEDL_44
 
-Here's a video verifying it's done live: 
+Here's a video verifying it's done live: https://youtu.be/oyO5GcVZGeQ
